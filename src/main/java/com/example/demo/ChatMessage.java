@@ -1,7 +1,6 @@
 package com.example.demo;
 
 public class ChatMessage {
-
     private String sender;
     private String content;
     private String timestamp;
