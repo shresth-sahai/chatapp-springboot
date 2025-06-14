@@ -13,6 +13,7 @@ public class ChatController {
     @MessageMapping("/send")
     @SendTo("/topic/messages")
     public ChatMessage send(ChatMessage message) {
+        System.out.println(" Message received: " + message.getSender() + " - " + message.getContent());
         message.setTimestamp(LocalDateTime.now().toString());
         return message;
     }
